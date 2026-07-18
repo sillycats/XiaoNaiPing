@@ -1,1 +1,7 @@
-检测更新配置内容。
+{
+  "versionCode": 2,
+  "versionName": "1.2.0",
+  "downloadUrl": "https://github.com/sillycats/XiaoNaiPing/releases/download/APKAnalyzer.apk",
+  "updateLog": "1. 新增自定义AI接口列表管理（增删改查）\n2. 新增所有设置持久化保存\n3. 新增深色模式切换\n4. 新增应用内更新检测\n5. 优化MCP工具调用稳定性\n6. 修复工作区自动恢复\n7. 新增应用图标",
+  "forceUpdate": false
+}
