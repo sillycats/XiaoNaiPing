@@ -1,0 +1,11 @@
+{
+    "versionCode": 11,
+    "versionName": "3.2.7",
+    "versionSize": 7100000,
+    "versionSizeText": "6.8MB",
+    "downloadUrl": "https://example.com/GreenDex-v3.2.7.apk",
+    "updateContent": "1. 修复GGLUA过滤\n2. 新增更新检测",
+    "forceUpdate": false,
+    "minVersionCode": 0
+}
+
