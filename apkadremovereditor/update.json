@@ -1,7 +1,7 @@
 {
   "versionCode": 5,
   "versionName": "1.5",
-  "force": true,
+  "force": false,
   "description": "- 新增移除APK根目录文件功能\n- 新增隐藏RES内XML布局功能\n- 新增移除AXML权限功能",
   "url": "https://mpimg.cn/down.php/05bf4feea1be04686e04dceebb6def21.apk"
 }
