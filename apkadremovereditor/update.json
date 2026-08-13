@@ -1,7 +1,7 @@
 {
-  "versionCode": 6,
-  "versionName": "1.6",
+  "versionCode": 7,
+  "versionName": "1.7",
   "force": false,
-  "description": "- 新增移除APK根目录文件功能\n- 新增隐藏RES内XML布局功能\n- 新增移除AXML权限功能\n- 优化处理速度\n- 优化日志输出\n- 修复已知BUG等",
-  "url": "https://mpimg.cn/down.php/05bf4feea1be04686e04dceebb6def21.apk"
+  "description": "- 新增移除APK根目录文件功能\n- 新增隐藏RES内XML布局功能\n- 新增移除AXML权限功能\n- 优化处理速度\n- 优化规范日志输出\n- 修复已知BUG等",
+  "url": "https://mpimg.cn/down.php/2c47d9a47d45f0de6de305a252363c82.apk"
 }
