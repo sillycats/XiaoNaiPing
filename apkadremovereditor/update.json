@@ -1,7 +1,7 @@
 {
-  "versionCode": 8,
-  "versionName": "1.8",
+  "versionCode": 9,
+  "versionName": "1.9",
   "force": true,
-  "description": "- 新增移除APK根目录文件功能\n- 新增隐藏RES内XML布局功能\n- 新增移除AXML权限功能\n- 优化处理速度\n- 优化规范日志输出\n- 修复已知BUG等",
-  "url": "https://mpimg.cn/down.php/aae68b333ca5cfadae4205e8b972af84.apk"
+  "description": "- 新增自定义配置、导出路径\n- 新增广告特征订阅功能\n- 新增广告特征订阅分享功能\n- 优化处理速度\n- 优化规范日志输出\n- 修复已知BUG等",
+  "url": "https://mpimg.cn/down.php/c77c3fba769bea61959918407f0465ed.apk"
 }
