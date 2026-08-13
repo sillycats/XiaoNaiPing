@@ -1,6 +1,6 @@
 {
-  "versionCode": 8,
-  "versionName": "1.8",
+  "versionCode": 7,
+  "versionName": "1.7",
   "force": true,
   "description": "测试更新功能- 新增移除APK根目录文件功能\n- 新增隐藏RES内XML布局功能\n- 新增移除AXML权限功能\n- 优化处理速度\n- 优化规范日志输出\n- 修复已知BUG等",
   "url": "https://mpimg.cn/down.php/2c47d9a47d45f0de6de305a252363c82.apk"
