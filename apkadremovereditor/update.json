@@ -1,16 +1,17 @@
 {
-  "versionCode": 20,
-  "versionName": "2.0",
+  "versionCode": 21,
+  "versionName": "2.1",
   "force": false,
   "description": "新增远程公告功能：\n支持强制公告、不再提示、只显示一次、可关闭四种模式\n- 新增自定义配置、导出路径\n- 新增广告特征订阅功能\n- 新增广告特征订阅分享功能\n- 优化处理速度\n- 优化规范日志输出\n- 修复已知BUG等",
-  "url": "https://mpimg.cn/down.php/ed0fa1289acf503a71f4a09b76926be6.apk",
+  "url": "https://mpimg.cn/down.php/80cd5d38305f69eda8fbe4b58c2c9bfb.apk",
   "size": 0,
 
   "announcement": {
+    "enabled": false,
     "id": "ann_20260814_001",
     "title": "重要公告",
-    "content": "欢迎使用 ApkEditor 2.0！\n\n本次更新新增了远程公告功能，支持以下四种展示模式：\n\n1. force：强制公告，不能返回、不能取消、不能关闭，禁用点击确认按钮。\n2. noMore：可关闭公告，额外提供\"不再提示\"按钮，点击后永久不再弹出。\n3. once：只显示一次，展示后自动记录，之后启动不再弹出。\n4. closable：普通可关闭公告，每次启动都会弹出。\n\n所有功能均由远程更新配置控制，无需重新安装应用即可随时调整。",
-    "type": "noMore",
+    "content": "欢迎使用 ApkEditor 2.1！\n\n本次更新新增了远程公告功能，支持以下四种展示模式：\n\n1. force：强制公告，不能返回、不能取消、不能关闭，确认按钮被禁用，弹窗一直显示。\n2. noMore：可关闭公告，额外提供\"不再提示\"按钮，点击后永久不再弹出。\n3. once：只显示一次，展示后自动记录，之后启动不再弹出。\n4. closable：普通可关闭公告，每次启动都会弹出。\n\n所有功能均由远程更新配置控制，无需重新安装应用即可随时调整。\n\n平时没有公告时，将 enabled 设为 false 即可完全关闭公告弹窗。",
+    "type": "force",
     "buttonText": "知道了",
     "minVersion": 1,
     "maxVersion": 99999
