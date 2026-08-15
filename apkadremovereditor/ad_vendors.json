@@ -5,7 +5,7 @@
     {
       "id": "bytedance_pangle",
       "name": "穿山甲",
-      "sdk_packages": ["com.bytedance.sdk.openadsdk", "com.bytedance.pangle", "com.bytedance.msdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.android.ss", "com.bytedance.sdk.openadsdk", "com.bytedance.pangle", "com.bytedance.msdk"],
       "class_keywords": ["TTAdNative", "TTAdManager", "TTAdSdk", "TTBannerAd", "TTFeedAd", "TTRewardVideoAd", "TTFullScreenVideoAd", "TTInterstitialAd", "PangleAd", "TTAdLoadNodeLineObserver", "TTMultiProvider"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadFeedAd", "showFeedAd", "loadRewardVideoAd", "showRewardVideoAd", "loadFullScreenVideoAd", "showFullScreenVideoAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd"],
       "method_neutralize_keywords": ["ttad", "ttbanner", "ttfeed", "ttreward", "ttfullscreen", "ttinterstitial", "ttnative", "pangle", "openadsdk", "adload", "adshow"],
@@ -20,7 +20,7 @@
     {
       "id": "tencent_gdt",
       "name": "广点通",
-      "sdk_packages": ["com.qq.e", "com.tencent.gdt", "com.tencent.ads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.qq.e", "com.tencent.gdt", "com.tencent.ads"],
       "class_keywords": ["GDTAdView", "GDTNativeAd", "GDTBannerView", "GDTUnifiedBannerView", "GDTInterstitialAd", "GDTUnifiedInterstitialAd", "GDTRewardVideoAd", "GDTNativeExpressAd", "GDTUnifiedNativeAd", "GDTAdSdk", "GDTApk", "GDTNativeADListenerImpl"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardVideoAd", "showRewardVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["gdt", "qqad", "gdtad", "gdtnative", "gdtbanner", "gdtinterstitial", "gdtreward", "adload", "adshow"],
@@ -35,7 +35,7 @@
     {
       "id": "baidu_mobads",
       "name": "百度联盟",
-      "sdk_packages": ["com.baidu.mobads", "com.baidu.mobads.sdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.baidu.mobads", "com.baidu.mobads.sdk"],
       "class_keywords": ["BaiduAdView", "BaiduAdManager", "BaiduBannerView", "BaiduInterstitialAd", "BaiduRewardVideoAd", "BaiduNativeAd", "BaiduExpressAdView", "AdView", "AdManager", "BDAdConfig", "CpuAdView", "XNativeView", "PatchVideoNative"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardVideoAd", "showRewardVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["baiduad", "mobads", "mobad", "baidu_ads", "adload", "adshow"],
@@ -50,7 +50,7 @@
     {
       "id": "google_admob",
       "name": "AdMob",
-      "sdk_packages": ["com.google.android.gms.ads", "com.google.android.ads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.google.android.gms.ads", "com.google.android.ads"],
       "class_keywords": ["AdView", "AdManager", "AdRequest", "AdLoader", "InterstitialAd", "RewardedAd", "BannerAd", "AdListener", "AdSize", "MobileAds", "AdMob"],
       "method_patterns": ["getAd", "loadAd",  "show", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["admob", "adview", "interstitialad", "rewardedad", "bannerad", "adloader", "mobileads", "adload", "adshow"],
@@ -65,7 +65,7 @@
     {
       "id": "kuaishou_ksad",
       "name": "快手联盟",
-      "sdk_packages": ["com.kuaishou.ads", "com.kwad.sdk", "com.kuaishou.ad", "com.yxcorp.kuaishou"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.kuaishou.ads", "com.kwad.sdk", "com.kuaishou.ad", "com.yxcorp.kuaishou"],
       "class_keywords": ["KSAdSDK", "KSAdManager", "KSBannerAd", "KSInterstitialAd", "KSRewardedVideoAd", "KSNativeAd", "KSFullScreenVideoAd", "KSAdView", "KsAdSDK", "KsDrawAd", "KsAdVideoPlayConfig", "KsImage"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedVideoAd", "showRewardedVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["ksad", "kwad", "kuaishou", "ksbanner", "ksinterstitial", "ksreward", "adload", "adshow"],
@@ -80,7 +80,7 @@
     {
       "id": "huawei_hms",
       "name": "华为广告",
-      "sdk_packages": ["com.huawei.hms.ads", "com.huawei.openalliance.ad"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.huawei.hms.ads", "com.huawei.openalliance.ad"],
       "class_keywords": ["HwAds", "HwAdView", "HwBannerAd", "HwInterstitialAd", "HwRewardAd", "HwNativeAd", "AdParam", "HwAdsRequest", "HiAd"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardAd", "showRewardAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["huawei", "hms_ads", "hwads", "hwad", "openalliance", "adload", "adshow"],
@@ -95,7 +95,7 @@
     {
       "id": "unity_ads",
       "name": "Unity Ads",
-      "sdk_packages": ["com.unity3d.ads", "com.unity3d.services"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.unity3d.ads", "com.unity3d.services"],
       "class_keywords": ["UnityAds", "UnityBanner", "UnityRewardedAd", "UnityInterstitialAd", "UnityAdsLoadListener", "UnityAdsShowListener"],
       "method_patterns": ["load", "show", "getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadRewardedAd", "showRewardedAd", "loadInterstitialAd", "showInterstitialAd"],
       "method_neutralize_keywords": ["unityads", "unity_ad", "unitybanner", "unityreward", "unityinterstitial", "adload", "adshow"],
@@ -110,7 +110,7 @@
     {
       "id": "mintegral",
       "name": "Mintegral",
-      "sdk_packages": ["com.mbridge.msdk", "com.mintegral.msdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.mbridge.msdk", "com.mintegral.msdk"],
       "class_keywords": ["MBridge", "MTGBannerAd", "MTGInterstitialAd", "MTGRewardVideoAd", "MTGNativeAd", "MTGAdManager", "MTGAdView", "MTGCommonActivity", "MBFileProvider"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardVideoAd", "showRewardVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["mbridge", "mtg", "mintegral", "mtgbanner", "mtginterstitial", "mtgreward", "adload", "adshow"],
@@ -125,7 +125,7 @@
     {
       "id": "applovin",
       "name": "AppLovin",
-      "sdk_packages": ["com.applovin", "com.applovin.sdk", "com.applovin.adview"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.applovin", "com.applovin.sdk", "com.applovin.adview"],
       "class_keywords": ["AppLovinAd", "AppLovinSdk", "AppLovinBannerAd", "AppLovinInterstitialAd", "AppLovinRewardedAd", "AppLovinNativeAd", "MaxAdView", "MaxInterstitialAd", "MaxRewardedAd"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["applovin", "applvn", "maxad", "maxinterstitial", "maxreward", "adload", "adshow"],
@@ -140,7 +140,7 @@
     {
       "id": "ironsource",
       "name": "IronSource",
-      "sdk_packages": ["com.ironsource", "com.ironsource.mediationsdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.ironsource", "com.ironsource.mediationsdk"],
       "class_keywords": ["IronSource", "IronSourceBanner", "IronSourceInterstitial", "IronSourceRewardedVideo", "ISBanner", "ISInterstitial", "ISRewardedVideo", "ISAdUnit"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedVideo", "showRewardedVideo"],
       "method_neutralize_keywords": ["ironsource", "is_banner", "is_interstitial", "is_reward", "mediationsdk", "adload", "adshow"],
@@ -155,7 +155,7 @@
     {
       "id": "facebook_audience",
       "name": "Meta Audience Network",
-      "sdk_packages": ["com.facebook.ads", "com.facebook.audiencenetwork"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.facebook.ads", "com.facebook.audiencenetwork"],
       "class_keywords": ["AdView", "AdManager", "InterstitialAd", "RewardedVideoAd", "NativeAd", "NativeBannerAd", "AudienceNetworkAds", "AdSettings"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedVideoAd", "showRewardedVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["facebook", "fb_ads", "audience", "audiencenetwork", "adload", "adshow"],
@@ -170,7 +170,7 @@
     {
       "id": "sigmob",
       "name": "Sigmob",
-      "sdk_packages": ["com.sigmob.windad", "com.sigmob.sdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.sigmob.windad", "com.sigmob.sdk"],
       "class_keywords": ["WindAd", "WindAdView", "WindBannerAd", "WindInterstitialAd", "WindRewardedVideoAd", "WindNativeAd", "WindAdManager", "WindAdOptions", "WindRewardAdRequest"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedVideoAd", "showRewardedVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["sigmob", "windad", "windbanner", "windinterstitial", "windreward", "adload", "adshow"],
@@ -185,7 +185,7 @@
     {
       "id": "topon_anythink",
       "name": "TopOn",
-      "sdk_packages": ["com.anythink.core", "com.anythink.network", "com.topon.sdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.anythink.core", "com.anythink.network", "com.topon.sdk"],
       "class_keywords": ["ATAdManager", "ATBannerAd", "ATInterstitialAd", "ATRewardedVideoAd", "ATNativeAd", "ATAdView", "ATAdConfig", "AnythinkSdkPlugin"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardedVideoAd", "showRewardedVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["anythink", "topon", "atbanner", "atinterstitial", "atreward", "atnative", "adload", "adshow"],
@@ -200,7 +200,7 @@
     {
       "id": "vungle",
       "name": "Vungle",
-      "sdk_packages": ["com.vungle.warren", "com.vungle.ads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.vungle.warren", "com.vungle.ads"],
       "class_keywords": ["Vungle", "VungleBanner", "VungleInterstitial", "VungleRewardedAd", "VungleNativeAd", "VungleAds", "VungleActivity"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["vungle", "vunglebanner", "vungleinterstitial", "vunglereward", "adload", "adshow"],
@@ -215,7 +215,7 @@
     {
       "id": "inmobi",
       "name": "InMobi",
-      "sdk_packages": ["com.inmobi", "com.inmobi.ads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.inmobi", "com.inmobi.ads"],
       "class_keywords": ["InMobiAdView", "InMobiBanner", "InMobiInterstitial", "InMobiRewardedAd", "InMobiNativeAd", "InMobiSdk"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["inmobi", "inmobiad", "inmobibanner", "inmobiinterstitial", "inmobireward", "adload", "adshow"],
@@ -230,7 +230,7 @@
     {
       "id": "chartboost",
       "name": "Chartboost",
-      "sdk_packages": ["com.chartboost.sdk"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.chartboost.sdk"],
       "class_keywords": ["Chartboost", "ChartboostBanner", "ChartboostInterstitial", "ChartboostRewardedAd", "CBAdView"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd"],
       "method_neutralize_keywords": ["chartboost", "cb_banner", "cb_interstitial", "cb_reward", "adload", "adshow"],
@@ -245,7 +245,7 @@
     {
       "id": "tapjoy",
       "name": "Tapjoy",
-      "sdk_packages": ["com.tapjoy"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.tapjoy"],
       "class_keywords": ["Tapjoy", "TapjoyAdView", "TapjoyBanner", "TapjoyInterstitial", "TapjoyRewardedAd", "TJAdUnit"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd"],
       "method_neutralize_keywords": ["tapjoy", "tj_banner", "tj_interstitial", "tj_reward", "adload", "adshow"],
@@ -260,7 +260,7 @@
     {
       "id": "mopub",
       "name": "MoPub",
-      "sdk_packages": ["com.mopub", "com.mopub.mobileads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.mopub", "com.mopub.mobileads"],
       "class_keywords": ["MoPub", "MoPubBanner", "MoPubInterstitial", "MoPubRewardedAd", "MoPubNativeAd", "MoPubView"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["mopub", "mopubbanner", "mopubinterstitial", "mopubreward", "adload", "adshow"],
@@ -275,7 +275,7 @@
     {
       "id": "oneway",
       "name": "OneWay",
-      "sdk_packages": ["com.oneway", "com.oneway.sdk", "mobi.oneway.export"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.oneway", "com.oneway.sdk", "mobi.oneway.export"],
       "class_keywords": ["OneWayAd", "OneWayBanner", "OneWayInterstitial", "OneWayRewardedAd", "OneWayNativeAd", "OWAdView"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBanner", "showBanner", "loadInterstitial", "showInterstitial", "loadRewardedAd", "showRewardedAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["oneway", "ow_banner", "ow_interstitial", "ow_reward", "adload", "adshow"],
@@ -290,7 +290,7 @@
     {
       "id": "beizi_ad",
       "name": "贝子广告",
-      "sdk_packages": ["com.beizi.ad", "com.beizi.fusion"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.beizi.ad", "com.beizi.fusion"],
       "class_keywords": ["BeiZiAd", "BeiZiUnifiedAd", "BeiZiBannerAd", "BeiZiInterstitialAd", "BeiZiRewardVideoAd", "BeiZiNativeAd", "BeiZiAdView", "BeiZiUnifiedAdEventListener", "ASNPAdActivity", "ASNPDlInfoDetailActivity", "ScopeCarouselView"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardVideoAd", "showRewardVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["beizi", "asnp", "beiziad", "beizibanner", "beiziinterstitial", "beizireward", "adload", "adshow"],
@@ -305,7 +305,7 @@
     {
       "id": "jutui_ad",
       "name": "聚推广告",
-      "sdk_packages": ["com.jutui.ads"],
+      "sdk_packages": [".ad.", ".ads.", ".banner.", "com.jutui.ads"],
       "class_keywords": ["JuTuiAd", "JuTuiVideoActivity", "JuTuiWebActivity", "JuTuiWebTheme"],
       "method_patterns": ["getAd", "loadAd",  "showAd", "loadBannerAd", "showBannerAd", "loadInterstitialAd", "showInterstitialAd", "loadRewardVideoAd", "showRewardVideoAd", "loadNativeAd", "showNativeAd"],
       "method_neutralize_keywords": ["jutui", "adload", "adshow"],
