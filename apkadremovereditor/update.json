@@ -3,14 +3,14 @@
   "versionName": "3.1",
   "force": true,
   "description": "【3.1 更新亮点】\n\n· 修复设置页\"DEX字符串广告特征\"问号按钮点击无反应的问题\n· 过签 SO 智能注入：自动识别目标 APK 的 ABI 架构，仅写入已存在的目录（arm64-v8a / armeabi-v7a 等），无 lib 目录则全架构写入\n· 钩子类名可自定义：KillerApplication 名称自由修改，内置 12 个内部类基于 dexlib2 自动同步重命名\n· 注入参数全面可自定义：原包路径 / 解压路径 / So库名 / 钩子类名 / 签名信息 / 入口名称，留空自动读取\n· 弹窗全面自适应：所有对话框上下自适应屏幕大小，内容过多自动滚动，不再溢出屏幕无法查看或点击\n· 注入参数弹窗优化：修复输入框字符重叠，新增布局内保存按钮，修改内容可正常保存\n· 设置界面完善：主题切换移入应用设置，过签设置新增免责声明，关于页面开源信息与功能列表全面更新\n· 日志精简规范：处理日志统一格式、合并冗余信息，关键数据一目了然",
-  "url": "https://github.com/sillycats/ApkAdRemoverEditor/releases/download/v3.1/ApkAdRemoverEditor-v3.1.apk",
-  "size": 9350764,
+  "url": "https://mpimg.cn/down.php/10558d148a04b7f4b96c5c40bf273daa.apk",
+  "size": 9470860,
   "announcement": {
     "enabled": true,
     "id": "ann_20260819_003",
     "title": "重要公告：谨防倒卖诈骗",
-    "content": "【郑重声明】本工具完全免费、开源（MIT License），从未授权任何个人或组织收费销售、代购或倒卖。\n\n近期发现有人对本工具进行倒卖贩卖，请务必提高警惕，切勿从非官方渠道付费购买，以免造成经济损失。\n\n【官方渠道】仅以下地址发布：\n· 项目主页：https://sillycats.github.io/ApkAdRemoverEditor/\n· GitHub 仓库：https://github.com/sillycats/ApkAdRemoverEditor\n· 官方 Releases：https://github.com/sillycats/ApkAdRemoverEditor/releases\n\n【风险提示】非官方渠道获取可能：\n1. 支付后钱款难以追回；\n2. 安装包被植入恶意代码或木马，窃取个人信息；\n3. 无法获得版本更新与安全修复。\n\n【举报】发现倒卖行为，请在 GitHub Discussions 发帖或提交 Issue 举报。\n\n请认准官方渠道，理性使用，谨防上当受骗。",
-    "type": "noMore",
+    "content": "【郑重声明】本工具完全免费、开源（MIT License），从未授权任何个人或组织收费销售、代购或倒卖。\n\n近期发现有人对本工具进行倒卖贩卖，请务必提高警惕，切勿从非官方渠道付费购买，以免造成经济损失。\n\n【官方渠道】仅以下地址发布：\n GitHub 仓库：https://github.com/sillycats/ApkAdRemoverEditor\n【风险提示】非官方渠道获取可能：\n1. 支付后钱款难以追回；\n2. 安装包被植入恶意代码或木马，窃取个人信息；\n3. 无法获得版本更新与安全修复。\n\n【举报】发现倒卖行为，请在 GitHub Discussions 发帖或提交 Issue 举报。\n\n请认准官方渠道，理性使用，谨防上当受骗。",
+    "type": "once",        // 改成 noMore / once / closable 即可切换模式
     "buttonText": "知道了",
     "minVersion": 1,
     "maxVersion": 99999
