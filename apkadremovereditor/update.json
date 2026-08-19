@@ -8,9 +8,9 @@
   "announcement": {
     "enabled": true,
     "id": "ann_20260819_003",
-    "title": "ApkEditor 3.0 更新公告",
-    "content": "欢迎使用 ApkEditor 3.0！\n\n本次更新围绕「过签」能力与「界面体验」做了全面升级。\n\n1. 过签 SO 智能注入：自动识别目标 APK 的 ABI 架构，只写入已存在的架构目录（arm64-v8a / armeabi-v7a 等），无 lib 目录则全架构写入，兼容性更好。\n2. 钩子类名可自定义：KillerApplication 名称可自由修改，内置 12 个内部类自动同步重命名，避免特征被检测。\n3. 注入参数全面可自定义：原包路径、解压路径、So库名、钩子类名、签名信息、入口名称均可配置，留空自动读取。\n4. 弹窗全面自适应：所有对话框上下自适应屏幕大小，内容过多自动滚动，不再溢出屏幕。\n5. 界面与体验优化：主题切换移入应用设置、过签设置新增免责声明、处理日志精简规范、关于页面信息全面更新。\n\n所有功能均由远程更新配置控制，无需重新安装应用即可随时调整。\n\n平时没有公告时，将 enabled 设为 false 即可完全关闭公告弹窗。",
-    "type": "closable",        // 改成 noMore / once / closable 即可切换模式
+    "title": "公告",
+    "content": "本工具不提供广告特征订阅内容，如需使用可由用户自定义添加广告特征。",
+    "type": "noMore",        // 改成 noMore / once / closable 即可切换模式
     "buttonText": "知道了",
     "minVersion": 1,
     "maxVersion": 99999
