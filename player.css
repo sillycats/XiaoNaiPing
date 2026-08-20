@@ -6,16 +6,16 @@
 #QPlayer {
 	position: fixed;
 	bottom: 60px;
-	left: -330px;
+	left: -300px;
 	z-index: 99999;
-	width: 330px;
+	width: 344px;
 	transition: transform .55s cubic-bezier(.22, 1, .36, 1);
 	font-family: "Noto Sans SC", "微软雅黑", "PingFang SC", sans-serif;
 	-webkit-user-select: none;
 	user-select: none;
 }
 #QPlayer.open {
-	transform: translateX(330px);
+	transform: translateX(300px);
 }
 
 /* ============ 主卡片 ============ */
@@ -214,7 +214,7 @@
 
 /* ============ 侧边滑块（缩放开关） ============ */
 #pContent .ssBtn {
-	width: 30px;
+	width: 44px;
 	height: 84px;
 	background: linear-gradient(180deg, #ff9a62, #ff7eb3);
 	border-radius: 0 22px 22px 0;
@@ -230,31 +230,23 @@
 	background: linear-gradient(180deg, #ffb36b, #ff8fb0);
 }
 #pContent .ssBtn .adf {
-	width: 14px;
-	height: 14px;
+	width: 20px;
+	height: 20px;
 	position: relative;
 	transition: transform .35s ease;
 }
 #pContent .ssBtn .adf::before {
-	content: "";
+	content: "♪";
 	position: absolute;
-	left: 1px;
-	top: 1px;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background: #fff;
-	box-shadow: 0 0 8px rgba(255, 255, 255, .8);
-}
-#pContent .ssBtn .adf::after {
-	content: "";
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	width: 4px;
-	height: 4px;
-	border-radius: 50%;
-	background: #ff7eb3;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, .18);
+	line-height: 1;
 }
 #pContent .ssBtn .adf.on {
 	transform: rotate(180deg);
@@ -490,16 +482,43 @@
 /* ============ 响应式 ============ */
 @media screen and (max-width: 480px) {
 	#QPlayer {
-		width: 300px;
-		left: -300px;
+		width: 314px;
+		left: -270px;
+		bottom: 48px;
 	}
 	#QPlayer.open {
-		transform: translateX(300px);
+		transform: translateX(270px);
 	}
 	#player {
 		width: 270px;
 	}
 	#pContent .ssBtn {
-		width: 28px;
+		width: 44px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	#QPlayer {
+		width: 294px;
+		left: -250px;
+	}
+	#QPlayer.open {
+		transform: translateX(250px);
+	}
+	#player {
+		width: 250px;
+	}
+	#player .cover {
+		width: 56px;
+		height: 56px;
+		left: 8px;
+		top: 12px;
+	}
+	#player .ctrl {
+		margin-left: 72px;
+		padding-left: 0;
+	}
+	.contr {
+		gap: 9px;
 	}
 }
