@@ -35,7 +35,7 @@
 #player {
 	position: relative;
 	width: 300px;
-	height: 84px;
+	height: 100px;
 	border-radius: 22px 0 0 22px;
 	overflow: hidden;
 }
@@ -44,7 +44,7 @@
 #player .cover {
 	position: absolute;
 	left: 12px;
-	top: 10px;
+	top: 18px;
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
@@ -84,8 +84,8 @@
 /* ============ 控制区 ============ */
 #player .ctrl {
 	margin-left: 84px;
-	padding: 10px 12px 8px 0;
-	height: 84px;
+	padding: 12px 12px 10px 0;
+	height: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -96,9 +96,8 @@
 	font-size: 13px;
 	font-weight: 700;
 	color: #5a4636;
-	line-height: 1.5;
+	line-height: 1.6;
 	cursor: pointer;
-	height: 20px;
 	overflow: hidden;
 	position: relative;
 }
@@ -127,7 +126,7 @@
 .progress {
 	display: flex;
 	align-items: center;
-	margin-top: 5px;
+	margin-top: 7px;
 	gap: 8px;
 }
 .progress .timer {
@@ -181,7 +180,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 13px;
-	margin-top: 7px;
+	margin-top: 8px;
 }
 .contr .icon {
 	display: inline-flex;
@@ -227,7 +226,7 @@
 /* ============ 侧边滑块（缩放开关） ============ */
 #pContent .ssBtn {
 	width: 44px;
-	height: 84px;
+	height: 100px;
 	background: linear-gradient(180deg, #ff9a62, #ff7eb3);
 	border-radius: 0 22px 22px 0;
 	cursor: pointer;
@@ -524,7 +523,7 @@
 		width: 56px;
 		height: 56px;
 		left: 8px;
-		top: 12px;
+		top: 22px;
 	}
 	#player .ctrl {
 		margin-left: 72px;
