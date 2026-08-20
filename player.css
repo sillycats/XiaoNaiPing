@@ -96,11 +96,23 @@
 	font-size: 13px;
 	font-weight: 700;
 	color: #5a4636;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 	line-height: 1.5;
 	cursor: pointer;
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+}
+#player .ctrl .musicTag .mt-inner {
+	display: inline-block;
+	white-space: nowrap;
+	will-change: transform;
+}
+#player .ctrl .musicTag.marquee .mt-inner {
+	animation: marquee var(--marquee-dur, 8s) linear infinite;
+}
+@keyframes marquee {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(var(--marquee-dist, -100px)); }
 }
 #player .ctrl .musicTag strong {
 	color: #e8734a;

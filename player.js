@@ -88,9 +88,13 @@
 
 	function renderNowPlaying() {
 		var song = playlist[currentTrack] || localSong;
+		$('.musicTag .mt-inner').remove();
+		$('<span class="mt-inner"></span>').appendTo('.musicTag');
+		$('.musicTag .mt-inner').append(
+			'<strong></strong><span> - </span><span class="artist"></span>'
+		);
 		$('.musicTag strong').text(song.title);
 		$('.musicTag .artist').text(song.artist || '未知歌手');
-		$('.musicTag .artist').prev('span').text(' - ');
 		// 封面
 		var $cover = $('#player .cover');
 		$cover.find('img').remove();
@@ -107,6 +111,28 @@
 		$('.progress .fill').css('width', '0%');
 		$('.timer.left').text('0:00');
 		$('.timer.right').text(song.duration ? fmtTime(song.duration) : '0:00');
+		// 检测歌名是否溢出，溢出则启用跑马灯
+		checkMarquee();
+	}
+
+	/* 歌名跑马灯：内容超出容器宽度时自动横向滚动 */
+	function checkMarquee() {
+		var $tag = $('.musicTag');
+		var $inner = $tag.find('.mt-inner');
+		if (!$inner.length) return;
+		$tag.removeClass('marquee');
+		$inner.css('animation', 'none');
+		// 强制 reflow，确保拿到最新宽度
+		void $inner[0].offsetWidth;
+		var containerW = $tag[0].clientWidth;
+		var textW = $inner[0].scrollWidth;
+		if (textW > containerW) {
+			var dist = textW - containerW + 24; // 额外留白
+			var dur = Math.max(6, dist / 32);   // 速度约 32px/s
+			$inner.css('--marquee-dist', '-' + dist + 'px');
+			$inner.css('--marquee-dur', dur + 's');
+			$tag.addClass('marquee');
+		}
 	}
 
 	/* ---------- 音频控制 ---------- */
@@ -425,6 +451,12 @@
 		loadDefaultSongs();
 		// 预加载本地歌曲（不自动播放，等待用户操作）
 		setupAudio(localSong.mp3, false);
+		// 窗口尺寸变化时重新检测歌名跑马灯
+		var resizeTimer;
+		$(window).on('resize', function() {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(checkMarquee, 200);
+		});
 	}
 
 	$(function() {
