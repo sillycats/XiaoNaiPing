@@ -296,32 +296,6 @@
 			filter: drop-shadow(0 6px 16px rgba(120, 80, 60, .2));
 		}
 
-		/* ===== 播放器主题微调（暖色） ===== */
-		#QPlayer {
-			z-index: 999999;
-		}
-
-		#player {
-			background: rgba(255, 255, 255, .92) !important;
-			border-radius: 0 0 0 14px;
-			box-shadow: 0 8px 30px rgba(120, 80, 60, .2);
-		}
-
-		#pContent .ssBtn {
-			background: linear-gradient(135deg, #ff9a62, #ff7eb3) !important;
-			border-radius: 14px 0 0 0;
-		}
-
-		#playlist {
-			background: rgba(255, 255, 255, .94) !important;
-			border-radius: 0 0 0 14px;
-		}
-
-		#playlist li.playing {
-			border-left-color: #ff9a62 !important;
-			color: #e8734a !important;
-		}
-
 		/* ===== 响应式 ===== */
 		@media screen and (max-width: 700px) {
 			#box {
@@ -431,7 +405,7 @@
 
 	<!-- 页脚 -->
 	<div id="footer">
-		<p>© 2025 小奶瓶 <span class="heart">♥</span> 个人网页</p>
+		<p>© 2026 小奶瓶 <span class="heart">♥</span> 个人网页</p>
 		<br><br><br>
 	</div>
 
@@ -451,14 +425,29 @@
 					</div>
 					<div class="progress">
 						<div class="timer left">0:00</div>
-						<div class="contr">
-							<div class="rewind icon"></div>
-							<div class="playback icon"></div>
-							<div class="fastforward icon"></div>
-						</div>
-						<div class="right">
-							<div class="liebiao icon"></div>
-						</div>
+						<div class="bar"><div class="fill"></div><div class="thumb"></div></div>
+						<div class="timer right">0:00</div>
+					</div>
+					<div class="contr">
+						<button type="button" class="icon btn-shuffle" title="随机播放">
+							<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+						</button>
+						<button type="button" class="icon btn-prev" title="上一首">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<button type="button" class="icon btn-play" title="播放/暂停">
+							<svg class="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+							<svg class="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+						</button>
+						<button type="button" class="icon btn-next" title="下一首">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<button type="button" class="icon btn-loop" title="单曲循环">
+							<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+						</button>
+						<button type="button" class="icon btn-list" title="播放列表">
+							<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -466,7 +455,17 @@
 				<div class="adf"></div>
 			</div>
 		</div>
-		<ol id="playlist"></ol>
+		<div id="playlist">
+			<div class="pl-head">
+				<span class="pl-title">播放列表</span>
+				<span class="pl-count" id="plCount">0 首</span>
+			</div>
+			<div class="pl-search">
+				<input type="text" id="plSearchInput" placeholder="搜索歌曲 / 歌手…" />
+				<button type="button" id="plSearchBtn">搜索</button>
+			</div>
+			<ol id="plList"></ol>
+		</div>
 	</div>
 	<div id="if-gg"></div>
 	<!--音乐播放器结束-->
@@ -484,28 +483,8 @@
 		});
 	</script>
 </body>
-<script src="jquery.marquee.min.js"></script>
-
-<!--播放器添加歌曲js-->
-<script>
-	var playlist = [{
-		title: "Coming home",
-		artist: "Remix",
-		mp3: "./轻音乐.m4a",
-		cover: "http://p1.music.126.net/axTRReTzIQQyibyKwXfLaw==/109951163785304009.jpg?param=130y130",
-	}, ];
-	var isRotate = true;
-	var autoplay = true;
-</script>
+<!--播放器脚本-->
 <script src="player.js"></script>
-<script>
-	function bgChange() {
-		var lis = $('.lib');
-		for (var i = 0; i < lis.length; i += 2)
-			lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
-	}
-	window.onload = bgChange;
-</script>
 
 <!--轮播初始化js-->
 <script>
