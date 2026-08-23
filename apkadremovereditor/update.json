@@ -1,10 +1,10 @@
 {
-  "versionCode": 31,
-  "versionName": "3.1",
+  "versionCode": 34,
+  "versionName": "3.4",
   "force": false,
-  "description": "【3.1 更新亮点】\n\n· 修复设置页\"DEX字符串广告特征\"问号按钮点击无反应的问题\n",
-  "url": "https://mpimg.cn/down.php/10558d148a04b7f4b96c5c40bf273daa.apk",
-  "size": 9470860,
+  "description": "【3.4 更新亮点】\n\n· 新增多国语言切换功能，支持 17 种语言，可跟随系统\n· 长文本自动换行完整显示，杜绝省略号截断\n· 修复切换语言后无法去广告处理 APK 的问题\n",
+  "url": "https://github.com/sillycats/ApkAdRemoverEditor/releases/download/v3.4/ApkAdRemoverEditor-v3.4.apk",
+  "size": 11578740,
   "announcement": {
     "enabled": true,
     "id": "ann_20260819_003",
