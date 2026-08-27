@@ -1,6 +1,6 @@
 {
   "versionCode": 35,                    // 版本号，需与 build.gradle 一致
-  "versionName": "3.5",                 // 版本名，需与 build.gradle 一致
+  "versionName": "3.5",                  // 版本名，需与 build.gradle 一致
   "force": false,                       // true=强制更新，false=提示更新（可跳过）
   "description": "【3.5 更新亮点】\n\n· 导出 APK 体积大幅优化：全流程最高 9 级压缩，避免体积膨胀\n· 修复编译异常，提升稳定性\n",
   "url": "https://github.com/sillycats/ApkAdRemoverEditor/releases/download/v3.5/ApkAdRemoverEditor_v3.5.apk",  // APK 下载地址
